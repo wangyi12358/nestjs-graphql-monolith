@@ -7,6 +7,9 @@
     "assets": [{
       "include": "../prisma/client",
       "outDir": "./dist/prisma"
+    }, {
+      "include": "i18n/**/*",
+      "outDir": "./dist/"
     }]
   }
 }

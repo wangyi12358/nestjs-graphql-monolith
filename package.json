@@ -8,7 +8,7 @@
   "scripts": {
     "build": "nest build",
     "start": "nest start",
-    "start:dev": "nest start --watch",
+    "start:dev": "dotenv -- nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
     "lint": "npx biome lint",
@@ -49,6 +49,7 @@
     "@types/node": "^20.3.1",
     "@types/supertest": "^6.0.0",
     "altair-express-middleware": "^7.3.6",
+    "dotenv-cli": "^7.4.2",
     "graphql-voyager": "^2.1.0",
     "jest": "^29.5.0",
     "prettier": "^3.0.0",
