@@ -1,6 +1,6 @@
 import { Injectable, OnModuleDestroy, OnModuleInit } from '@nestjs/common';
 import dayjs from 'dayjs';
-import { PrismaClientExtended } from './prisma.client';
+import { PrismaClientExtended } from '~/utils/prisma';
 
 @Injectable()
 export class PrismaService
