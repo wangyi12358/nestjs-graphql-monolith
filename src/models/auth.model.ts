@@ -1,4 +1,5 @@
 import { Field, ObjectType } from '@nestjs/graphql';
+import { User } from './@generated';
 
 @ObjectType()
 export class Login {
@@ -10,6 +11,6 @@ export class Login {
   })
   expiredDays: number;
 
-  // @Field(() => User)
-  // user: User;
+  @Field(() => User)
+  user: User;
 }

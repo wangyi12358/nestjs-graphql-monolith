@@ -2,6 +2,13 @@ generator client {
   provider = "prisma-client-js"
 }
 
+generator nestgraphql {
+  provider   = "node node_modules/prisma-nestjs-graphql"
+  output     = "../src/models/@generated"
+  reExport   = Single
+  emitBlocks = ["models", "enums", "inputs"]
+}
+
 datasource db {
   provider = "postgresql"
   url      = "postgresql://postgres:postgre@127.0.0.1:5432/find-charger"
@@ -9,8 +16,11 @@ datasource db {
 
 model User {
   id       Int     @id @default(autoincrement())
+  /// The username of the user
   username String  @unique
   name     String?
+  /// @HideField()
   password String
+  /// @HideField({ output: true, input: true })
   salt     String
 }
