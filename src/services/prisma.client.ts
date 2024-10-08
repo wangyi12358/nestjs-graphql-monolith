@@ -1,9 +1,5 @@
 import { PrismaClient } from '@prisma/client';
-import {
-  filterSoftDeleted,
-  softDelete,
-  softDeleteMany,
-} from '~/utils/prisma';
+import { filterSoftDeleted, softDelete, softDeleteMany } from '~/utils/prisma';
 
 // function to give us a prismaClient with extensions we want
 export const customPrismaClient = (prismaClient: PrismaClient) => {
