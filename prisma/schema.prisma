@@ -1,0 +1,16 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://postgres:postgre@127.0.0.1:5432/find-charger"
+}
+
+model User {
+  id       Int     @id @default(autoincrement())
+  username String  @unique
+  name     String?
+  password String
+  salt     String
+}

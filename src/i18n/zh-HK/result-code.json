@@ -1,0 +1,12 @@
+{
+  "user": {
+    "notFound": "使用者名稱或密碼不正確！",
+    "oldPasswordError": "舊密碼不正確！",
+    "disable": "用戶已被停用！",
+    "notExist": "用戶不存在！"
+  },
+  "base": {
+    "dataNotFound": "未找到數據！",
+    "nameExist": "名稱已存在！"
+  }
+}

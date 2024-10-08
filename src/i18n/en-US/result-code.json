@@ -1,0 +1,12 @@
+{
+  "base": {
+    "dataNotFound": "Data not found!",
+    "nameExist": "Name already exists!"
+  },
+  "user": {
+    "notFound": "Username or password is incorrect!",
+    "notExist": "User does not exist!",
+    "oldPasswordError": "Old password is incorrect!",
+    "disable": "User is disabled!"
+  }
+}
